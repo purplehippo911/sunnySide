@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@1,9..144,700;1,9..144,900&display=swap');
+
 /* Primary */
 $Softred: hsl(7, 99%, 70%);
 $Yellow: hsl(51, 100%, 49%);
@@ -11,3 +13,7 @@ $Verygrayishblue: hsl(213, 9%, 39%);
 $Darkgrayishblue: hsl(232, 10%, 55%);
 $Grayishblue: hsl(210, 4%, 67%);
 $White: hsl(0, 0%, 100%);
+
+/* font-families */
+$font1:'Barlow', sans-serif;
+$font2:'Fraunces', serif;

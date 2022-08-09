@@ -1,8 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@1,9..144,700;1,9..144,900&display=swap");
 /* Primary */
 /*graphic desing text*/
 /* photography text*/
 /* footer */
 /*Neutral*/
+/* font-families */
+header {
+  padding: 1rem;
+  background: hsl(168deg, 34%, 41%);
+  background-image: url("./images/mobile/image-header.jpg");
+}
+@media screen and (max-width: 600px) {
+  header {
+    background-image: url("images/desktop/image-header.jpg");
+  }
+}
+header .header__title {
+  color: hsl(0deg, 0%, 100%);
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  width: 100%;
+  padding: 1rem;
+  display: none;
+}
+nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+nav .nav__link {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 900;
+}
+
 img, picture {
   max-width: 100%;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=style.css.map */

@@ -14,23 +14,13 @@
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
     <link rel="stylesheet" href="src/styles/style.css" />
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <header class="header">
       <div class="container row">
         <a href="#" class="logo">
           <picture>
-            <img src="images/logo.svg" alt="this is the logo" />
+            <img src="src/images/logo.svg" alt="this is the logo" />
           </picture>
         </a>
         <nav class="nav">
@@ -57,12 +47,17 @@
             </li>
           </ul>
         </nav>
-        <picture class="hamburger">
-          <img src="images/icon-hamburger.svg" alt="hamburger" />
-        </picture>
+        <a href="#">
+          <picture class="hamburger">
+            <img src="src/images/icon-hamburger.svg" alt="hamburger" />
+          </picture>
+        </a>
       </div>
-      <div class="header__title">
+      <div class="header__title row">
         <h1 class="title first__title">We are creatives</h1>
+        <picture>
+          <img src="src/images/icon-arrow-down.svg" alt="arrow down" />
+        </picture>
       </div>
     </header>
     <section class="first-section">
@@ -70,12 +65,13 @@
         <picture>
           <source
             media="(min-width:650px)"
-            srcset="images/desktop/image-transform.jpg"
+            srcset="src/images/desktop/image-transform.jpg"
           />
           <source
             media="(min-width:465px)"
-            srcset="images/desktop/image-transform.jpg"
+            srcset="src/images/desktop/image-transform.jpg"
           />
+          <img src="src/images/desktop/image-transform.jpg" alt="an egg" />
         </picture>
       </div>
     </section>

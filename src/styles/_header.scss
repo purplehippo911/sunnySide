@@ -1,0 +1,33 @@
+
+header {
+    padding:1rem;
+    // background:$Darkmoderatecyan;
+    background-image:url("./src/images/mobile/image-header.jpg");
+    @media screen and (max-width:600px) {
+        background-image:url("./src/images/desktop/image-header.jpg");
+        
+    };
+    .header__title {
+        color:$White;
+        align-items:center;
+        flex-direction:column;
+    }
+}
+
+nav {
+    width:100%;
+    padding:1rem;
+    display:none;
+    .nav__list {
+        display:flex;
+        // gap:2rem;
+        justify-content:space-between;
+        list-style: none;
+    }
+    .nav__link {
+        color:$White;
+        font-weight:900;
+    }      
+ 
+}
+
