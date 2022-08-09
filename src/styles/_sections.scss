@@ -1,0 +1,12 @@
+section {
+    width:100%;
+    background:$Yellow;
+    .row {
+        flex-direction:column;
+        justify-content: center;
+    }
+    picture, img {
+        width:100%;
+        margin-right:20rem;
+    }
+}
