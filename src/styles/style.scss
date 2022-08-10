@@ -2,9 +2,14 @@
 @import '_header';
 @import '_sections';
 
-img,picture {
+
+body {
+    margin:0;
+    padding:0;
+}
+
+img {
     max-width:100%;
-    padding:2rem;
 }
 
 a {
@@ -15,7 +20,6 @@ a {
 .container {
     margin:0 auto;
     width:100%;
-    border:5px solid red;
 
 }
 
@@ -24,6 +28,9 @@ a {
     justify-content:center;
 }
 
+footer {
+    background:$Darkmoderatecyan;
+}
 
 .attribution {
     font-size: 11px;
