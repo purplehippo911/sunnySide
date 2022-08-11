@@ -286,14 +286,14 @@
           <picture>
             <source
               media="(max-width:550px)"
-              srcset="src/images/mobile/image-gallery-sugarcubes.jpg"
+              srcset="src/images/mobile/image-gallery-sugar-cubes.jpg"
             />
             <source
               media="(min-width:650px)"
               srcset="src/images/desktop/image-gallery-sugarcubes.jpg"
             />
             <img
-              src="src/images/mobile/image-gallery-sugarcubes.jpg
+              src="src/images/mobile/image-gallery-sugar-cubes.jpg
               "
               alt="a bunch of sugarcubes stacked upon each others "
             />
@@ -303,19 +303,60 @@
           <a href="#" class="logo">
               <img src="src/images/logo.svg" alt="this is the logo" />
           </a>
+          <div class="footer__links">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Services</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Projects</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links social">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#">
+                  <img src="src/images/icon-facebook.svg" alt="facebook icon">
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#">
+                  <img src="src/images/icon-instagram.svg" alt="instagram icon">
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#">
+                  <img src="src/images/icon-twitter.svg" alt="twitter icon">
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#">
+                  <img src="src/images/icon-pinterest.svg" alt="pinterest icon">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        
       </div>
     </footer>
-
-    
-    About Services Projects Contact
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/purplehippo911"> Purplehipp911</a>.
     </div>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const dropdown = document.querySelector('.dropdown');
+
+      hamburger.addEventListener('click', (e) => {
+          dropdown.classList.toggle('open');
+      });
+    </script>
   </body>
 </html>

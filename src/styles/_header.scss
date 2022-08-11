@@ -1,22 +1,30 @@
 
 header {
     padding:5rem;
-    background: url(../images/mobile/image-header.jpg) repeat;
+    height:100%;
+    background: url(../images/mobile/image-header.jpg) no-repeat;
     @media screen and (min-width:600px) {
-        background: url(../images/desktop/image-header.jpg) repeat;
-        
+        background: url(../images/desktop/image-header.jpg) no-repeat;
     };
     .header__title {
         color:$White;
         align-items:center;
         flex-direction:column;
+        margin-top: 2rem;
     }
+}
+
+.logo {
+    margin:auto;
 }
 
 nav {
     width:100%;
     padding:1rem;
     display:none;
+    @media screen and (min-width: 800px){
+        display:block;
+    }
 }
 
 .nav__list {
@@ -32,19 +40,31 @@ nav {
     color:$Darkgrayishblue;
     font-family:$font1;
     font-size:20px;
-    // font-weight:900;
+    font-weight:900;
 }    
 
 .hamburger {
-    margin-right:auto;
+    margin:auto;
+    @media screen and (min-width: 800px){
+        display:none;
+    }
+
+}
+
+.dropdown.open{
+    display:block;
+    @media screen and (min-width: 800px){
+        display:none;
+    }
 }
 
 .dropdown {
     width:80%;
     margin:0 auto;
-    margin-top:2rem;
+    margin-top:3rem;
     background:$White;
     display:none;
+    transition: .9s ease-in-out;
     nav{
         display:flex;
         justify-content:center;
