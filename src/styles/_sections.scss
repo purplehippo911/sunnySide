@@ -1,12 +1,163 @@
+
 section {
     width:100%;
     background:$White;
+    @media screen and (min-width: 800px){
+        grid-column:span 2;
+    }
+    @media screen and (max-width:700px) { 
+        max-width:661px;
+    }
+
     .row {
         flex-direction:column;
-        justify-content: center;
+        @media screen and (min-width:800px) {
+            flex-direction:row;
+        }
     }
-    picture, img {
+    picture{
         width:100%;
-        margin-right:20rem;
     }
+}
+
+.first-section picture {
+    @media screen and (min-width:800px) {
+        order:1;
+    }
+}
+
+.section__col {
+    width:100%;
+    padding:100px 0;
+    display:flex;
+    flex-direction:column;
+   
+}
+
+.section__title {
+    color:$VerydarkBlue;
+    font-size:3em;
+    padding:0 4rem;
+}
+
+.section__info {
+    padding:0 4rem;
+    color:$Darkgrayishblue;
+}
+
+.section__button {
+    margin:0;
+    padding:0 4rem;
+    color:$VerydarkBlue;
+    text-transform: uppercase;
+    font-weight:800;
+    font-family:$font1;
+    text-decoration:underline;
+    text-decoration-color:$Softred;
+    text-decoration-style: double;
+    &:hover{ 
+        opacity:70%;
+    }
+}
+
+.button--yellow {
+    text-decoration-color:$Yellow;
+}
+
+.third-section, .fourth-section {
+    grid-column:span 1;
+    .img_wrapper {
+        padding:200px 0;
+        max-height:220px;
+    }
+    .row {
+        text-align:center;
+        align-items:center;
+    }
+}
+
+.third-section {
+    .img_wrapper {
+        background: url(../images/mobile/image-graphic-design.jpg), no-repeat;
+        background-size:cover;
+        @media screen and (min-width:800px) {
+            background: url(../images/desktop/image-graphic-design.jpg), no-repeat;
+            background-size:cover;
+        };
+    }
+    .section__title {
+        color:$Darkcyan;
+    }
+
+    .section__info {
+        color:$Darkcyan;
+    }
+}
+
+.fourth-section {
+    .img_wrapper {
+        background: url(../images/mobile/image-photography.jpg), no-repeat;
+        background-size:cover;
+        @media screen and (min-width:800px) {
+            background: url(../images/desktop/image-photography.jpg), no-repeat;
+            background-size:cover;
+        };
+    }
+    .section__title {
+        color:$Darkblue;
+    }
+    
+    .section__info {
+        color:$Darkblue;
+    }
+}
+
+.testimonials {
+    width:100%;
+    padding:100px 0;
+    text-align:center;
+    @media screen and (min-width:800px) {
+        display:grid;
+        gap:2rem;
+        justify-items:center;
+        align-items:center;
+     }
+
+    .col {
+        @media screen and (max-width: 700px){
+            margin-bottom:5rem;
+        }
+        &:last-child{
+            margin-bottom:0em;
+        }
+    }
+
+    .col > * {
+       margin-top:3rem;
+    }
+    img {
+        border-radius:100px;
+    }
+
+    .section__title {
+        grid-row-start:1;
+        grid-column:1 / 4;
+        margin-bottom:3rem;
+        text-transform:uppercase;
+        font-size:1.6em;
+        color:$Grayishblue;
+    }
+    
+    .section__info {
+        color:$VerydarkBlue;
+    }
+}
+
+.profession__title {
+    margin-bottom:0rem;
+}
+
+.profession__info {
+    margin-top:.5rem;
+    color:$Grayishblue;
 }

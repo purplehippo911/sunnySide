@@ -19,57 +19,57 @@
     <header class="header">
       <div class="container row">
         <a href="#" class="logo">
-            <img src="src/images/logo.svg" alt="this is the logo" />
+          <img src="src/images/logo.svg" alt="this is the logo" />
         </a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">
-                <em>About</em>
+                <strong>About</strong>
               </a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">
-                <em>Services</em>
+                <strong>Services</strong>
               </a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">
-                <em>Projects</em>
+                <strong>Projects</strong>
               </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">
-                <em>Contact</em>
+              <a href="#" class="nav__link --nav__button">
+                <strong>Contact</strong>
               </a>
             </li>
           </ul>
         </nav>
         <a class="hamburger" href="#">
-            <img src="src/images/icon-hamburger.svg" alt="hamburger" />
+          <img src="src/images/icon-hamburger.svg" alt="hamburger" />
         </a>
       </div>
       <div class="dropdown">
-        <nav class="dropdown nav">
+        <nav class="dropdown__nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">
-                <em>About</em>
+                <strong>About</strong>
               </a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">
-                <em>Services</em>
+                <strong>Services</strong>
               </a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">
-                <em>Projects</em>
+                <strong>Projects</strong>
               </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">
-                <em>Contact</em>
+              <a href="#" class="nav__link --nav__button">
+                <strong>Contact</strong>
               </a>
             </li>
           </ul>
@@ -80,160 +80,134 @@
         <picture>
           <img src="src/images/icon-arrow-down.svg" alt="arrow down" />
         </picture>
+      </div>  
       </div>
     </header>
-    <section class="first-section">
-      <div class="container row">
-        <picture>
-          <source
-            media="(max-width:550px)"
-            srcset="src/images/mobile/image-transform.jpg"
-          />
-          <source
-            media="(min-width:650px)"
-            srcset="src/images/desktop/image-transform.jpg"
-          />
-          <img src="src/images/desktop/image-transform.jpg" alt="an egg" />
-        </picture>
-
-        <div class="col">
-          <h2>Transform your brand</h2>
-          <p>
-            We are a full-service creative agency specializing in helping brands
-            grow fast. Engage your clients through compelling visuals that do
-            most of the marketing for you.
-          </p>
-          <a href="#">Learn more </a>
-        </div>
-      </div>
-    </section>
-    <section class="second-section">
-      <div class="container row">
-        <picture>
-          <source
-            media="(max-width:550px)"
-            srcset="src/images/mobile/stand-out.jpg"
-          />
-          <source
-            media="(min-width:650px)"
-            srcset="src/images/desktop/image-stand-out.jpg"
-          />
-          <img src="src/images/mobile/image-stand-out.jpg" alt="a pink cup" />
-        </picture>
-
-        <div class="col">
-          <h2>Stand out to hte right audience</h2>
-          <p>
-            Using a collaborative formula of designers, researchers,
-            photographers, videographers, and copywriters, we’ll build and
-            extend your brand in digital places.
-          </p>
-          <a href="#">Learn more </a>
-        </div>
-      </div>
-    </section>
-    <section class="third-section">
-      <div class="container row">
-        <picture>
-          <source
-            media="(max-width:550px)"
-            srcset="src/images/mobile/image-graphic-design.jpg"
-          />
-          <source
-            media="(min-width:650px)"
-            srcset="src/images/desktop/image-graphic-design.jpg"
-          />
-          <img
-            src="src/images/mobile/image-graphic-design.jpg"
-            alt="two red cherries"
-          />
-        </picture>
-
-        <div class="col">
-          <h2>Graphic design</h2>
-          <p>
-            Great design makes you memorable. We deliver artwork that
-            underscores your brand message and captures potential clients’
-            attention.
-          </p>
-          <a href="#">Learn more </a>
-        </div>
-      </div>
-    </section>
-    <section class="fourth-section">
-      <div class="container row">
-        <picture>
-          <source
-            media="(max-width:550px)"
-            srcset="src/images/mobile/image-photography.jpg"
-          />
-          <source
-            media="(min-width:650px)"
-            srcset="src/images/desktop/image-photography.jpg"
-          />
-          <img
-            src="src/images/mobile/image-photography.jpg"
-            alt="an orange with a leaf attached to the top"
-          />
-        </picture>
-
-        <div class="col">
-          <h2>Photography</h2>
-          <p>
-            Increase your credibility by getting the most stunning, high-quality
-            photos that improve your business image.
-          </p>
-          <a href="#">Learn more </a>
-        </div>
-      </div>
-    </section>
-    <section class="fifth-section testimonials-section">
-      <div class="container row">
-        <h3>client testimonials</h3>
-
-        <div class="col">
+    <main class="main container grid">
+      <section class="first-section">
+        <div class="container row">
           <picture>
-            <img src="src/images/image-emily.jpg" alt="Emily">
+            <source
+              media="(max-width:800px)"
+              srcset="src/images/mobile/image-transform.jpg"
+            />
+            <source
+              media="(min-width:850px)"
+              srcset="src/images/desktop/image-transform.jpg"
+            />
+            <img src="src/images/desktop/image-transform.jpg" alt="an egg" />
           </picture>
-          <p>We put our trust in Sunnyside and they delivered, making
-            sure our needs were met and deadlines were always hit.
-          </p>
-          <div class="profession">
-            <h3>Emily R.</h3>
-            <p>Marketing Director</p>
-          </div>
-
-        <div class="col">
-          <picture>
-            <img src="src/images/image-thomas.jpg" alt="Thomas">
-          </picture>
-          <p>Sunnyside’s enthusiasm coupled with their keen interest in our
-            brand’s success made it a satisfying and enjoyable experience.
-          </p>
-          <div class="profession">
-            <h3>Thomas S.</h3>
-            <p>Chief Operating Officer</p>
+          <div class="col section__col">
+            <h2 class="section__title">Transform your brand</h2>
+            <p class="section__info">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a class="section__button button--yellow" href="#">Learn more </a>
           </div>
         </div>
-        
-        <div class="col">
+      </section>
+      <section class="second-section">
+        <div class="container row">
           <picture>
-            <img src="src/images/image-jennie.jpg" alt="Jennie">
+            <source
+              media="(max-width:550px)"
+              srcset="src/images/mobile/stand-out.jpg"
+            />
+            <source
+              media="(min-width:650px)"
+              srcset="src/images/desktop/image-stand-out.jpg"
+            />
+            <img src="src/images/mobile/image-stand-out.jpg" alt="a pink cup" />
           </picture>
-          <p>Incredible end result! Our sales increased over 400%
-            when we worked with Sunnyside. Highly recommended!
-          </p>
-          <div class="profession">
-            <h3>Jennie F.</h3>
-            <p>Business Owner</p>
+          <div class="col section__col">
+            <h2 class="section__title">Stand out to the right audience</h2>
+            <p class="section__info">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a class="section__button button--red" href="#">Learn more </a>
           </div>
         </div>
+      </section>
+      <section class="third-section">
+        <div class="container row">
+          <div class="img_wrapper">
+            <div class="col">
+              <h2 class="section__title">Graphic design</h2>
+              <p class="section__info">
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fourth-section">
+        <div class="container row">
+          <div class="img_wrapper">
+            <div class="col">
+              <h2 class="section__title">Photography</h2>
+              <p class="section__info">
+                Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business image.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fifth-section testimonials-section">
+        <div class="container row">
+          <div class="testimonials">
+            <h3 class="section__title">Client Testimonials</h3>
+            <div class="col">
+              <picture>
+                <img src="src/images/image-emily.jpg" alt="Emily" />
+              </picture>
+              <p class="section__info">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+              <div class="profession">
+                <h3 class="profession__title">Emily R.</h3>
+                <p class="profession__info">Marketing Director</p>
+              </div>
+            </div>
+            <div class="col">
+              <picture>
+                <img src="src/images/image-thomas.jpg" alt="Thomas" />
+              </picture>
+              <p class="section__info">
+                Sunnyside’s enthusiasm coupled with their keen interest in our
+                brand’s success made it a satisfying and enjoyable experience.
+              </p>
+              <div class="profession">
+                <h3 class="profession__title">Thomas S.</h3>
+                <p class="profession__info">Chief Operating Officer</p>
+              </div>
+            </div>
+            <div class="col">
+              <picture>
+                <img src="src/images/image-jennie.jpg" alt="Jennie" />
+              </picture>
+              <p class="section__info">
+                Incredible end result! Our sales increased over 400% when we
+                worked with Sunnyside. Highly recommended!
+              </p>
+              <div class="profession">
+                <h3 class="profession__title">Jennie F.</h3>
+                <p class="profession__info">Business Owner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        
-      </div>
-    </section>
-
-    <footer class="fifth-section testimonials-section">
+    <footer class="footer">
       <div class="container row">
         <div class="gallery">
           <picture>
@@ -267,7 +241,7 @@
               alt="a slice of orange on a plate"
             />
           </picture>
-          
+
           <picture>
             <source
               media="(max-width:550px)"
@@ -301,7 +275,7 @@
         </div>
         <div class="col">
           <a href="#" class="logo">
-              <img src="src/images/logo.svg" alt="this is the logo" />
+            <img src="src/images/logo.svg" alt="this is the logo" />
           </a>
           <div class="footer__links">
             <ul class="footer__list">
@@ -340,6 +314,27 @@
               </li>
             </ul>
           </div>
+          <section class="footer__wrapper_links">
+            <div class="footer__links">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Projects</a>
+            </div>
+            <div class="footer__links social">
+              <a href="#">
+                <img src="src/images/icon-facebook.svg" alt="facebook icon" />
+              </a>
+              <a href="#">
+                <img src="src/images/icon-instagram.svg" alt="instagram icon" />
+              </a>
+              <a href="#">
+                <img src="src/images/icon-twitter.svg" alt="twitter icon" />
+              </a>
+              <a href="#">
+                <img src="src/images/icon-pinterest.svg" alt="pinterest icon" />
+              </a>
+            </div>
+          </section>
         </div>
       </div>
     </footer>
@@ -349,13 +344,18 @@
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
       >Frontend Mentor</a
       >. Coded by <a href="https://www.frontendmentor.io/profile/purplehippo911"> Purplehipp911</a>.
+      >Frontend Mentor</a
+    >. Coded by
+    <a href="https://www.frontendmentor.io/profile/purplehippo911">
+      Purplehipp911</a
+    >
     </div>
     <script>
       const hamburger = document.querySelector('.hamburger');
       const dropdown = document.querySelector('.dropdown');
 
-      hamburger.addEventListener('click', (e) => {
-          dropdown.classList.toggle('open');
+      hamburger.addEventListener("click", (e) => {
+        dropdown.classList.toggle("open");
       });
     </script>
   </body>
