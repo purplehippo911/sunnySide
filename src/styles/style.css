@@ -6,6 +6,7 @@
 /*Neutral*/
 /* font-families */
 header {
+<<<<<<< HEAD
   padding: 5rem;
   background: url(../images/mobile/image-header.jpg) no-repeat;
 }
@@ -41,6 +42,33 @@ header {
   }
 }
 @media screen and (min-width: 600px) and (min-width: 800px) {
+=======
+  padding: 3rem 5rem;
+  background: url(../images/mobile/image-header.jpg), no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 600px) {
+  header {
+    background: url(../images/desktop/image-header.jpg), no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 800px) {
+  header {
+    height: 100vh;
+  }
+}
+header .header__title {
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Fraunces", serif;
+  font-size: 25px;
+  margin: 2rem 0;
+}
+@media screen and (min-width: 800px) {
+>>>>>>> feature
   header .header__title {
     font-size: 3em;
   }
@@ -147,15 +175,25 @@ section {
     grid-column: span 2;
   }
 }
+<<<<<<< HEAD
 @media screen and (max-width: 800px) {
   section {
     max-width: 670px;
+=======
+@media screen and (max-width: 700px) {
+  section {
+    max-width: 661px;
+>>>>>>> feature
   }
 }
 section .row {
   flex-direction: column;
 }
+<<<<<<< HEAD
 @media screen and (min-width: 840px) {
+=======
+@media screen and (min-width: 800px) {
+>>>>>>> feature
   section .row {
     flex-direction: row;
   }
@@ -319,6 +357,7 @@ footer .col {
 }
 footer .logo {
   grid-column: span 2;
+<<<<<<< HEAD
   justify-content: center;
   margin-bottom: 1rem;
   max-height: 30.9px;
@@ -350,6 +389,39 @@ footer a:hover {
 
 .footer__links {
   width: 100%;
+=======
+  justify-content: center;
+  margin-bottom: 1rem;
+  max-height: 30.9px;
+  margin-top: 3rem;
+}
+footer a {
+  color: hsl(167deg, 40%, 24%);
+}
+footer a:hover {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.footer__wrapper_links {
+  width: 100%;
+  grid-column: span 2;
+  background: inherit;
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+  gap: 4rem;
+  margin-bottom: 1rem;
+}
+
+.footer__links {
+  width: 100%;
+>>>>>>> feature
   display: flex;
   gap: 2rem;
 }
@@ -381,10 +453,13 @@ ul {
   list-style: none;
 }
 
+<<<<<<< HEAD
 main {
   width: 100%;
 }
 
+=======
+>>>>>>> feature
 .container {
   width: 100%;
 }
@@ -394,8 +469,14 @@ main {
   align-items: center;
 }
 
-footer {
-  background: hsl(168deg, 34%, 41%);
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+}
+@media screen and (min-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
 }
 footer .row {
   flex-direction: column;

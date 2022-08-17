@@ -1,0 +1,33 @@
+{
+  "name": "sunnyside",
+  "description": "![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "Purplehippo911",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.54.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purplehippo911/sunnySide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/purplehippo911/sunnySide/issues"
+  },
+  "homepage": "https://github.com/purplehippo911/sunnySide#readme",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
