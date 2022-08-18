@@ -39,7 +39,7 @@ Mobile:
 
 ### Links
 
-- Solution URL: [My soluti](https://www.frontendmentor.io/solutions/responsive-landing-page-with-sass-and-gulp-vdisTnLOX0)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/responsive-landing-page-with-sass-and-gulp-vdisTnLOX0)
 - Live Site URL: [My Live Site](https://purplehippo911.github.io/sunnySide/)
 
 ## My process
