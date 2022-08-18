@@ -30,17 +30,12 @@ ul {
     list-style:none;
 }
 
-<<<<<<< HEAD
 main {
     width:100%;
 }
 
 .container {
     width:100%;
-=======
-.container {
-    width:100%;
->>>>>>> feature
 }
 
 .row {
@@ -48,7 +43,6 @@ main {
     align-items:center;
 }
 
-<<<<<<< HEAD
 footer {
     background:$Darkmoderatecyan;
     .row{
@@ -59,13 +53,7 @@ footer {
 .grid {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
-    @media screen and (min-width: 850px){
-=======
-.grid {
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
     @media screen and (min-width: 800px){
->>>>>>> feature
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
     

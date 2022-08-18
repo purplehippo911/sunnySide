@@ -1,20 +1,9 @@
 
 header {
-<<<<<<< HEAD
-    padding:5rem;
-    background: url(../images/mobile/image-header.jpg) no-repeat;
-    @media screen and (min-width:600px) {
-        background: url(../images/desktop/image-header.jpg) no-repeat;
-        padding:3rem 5rem;
-        background: url(../images/mobile/image-header.jpg), no-repeat;
-        background-size:cover;
-    @media screen and (min-width:600px) {
-=======
     padding:3rem 5rem;
     background: url(../images/mobile/image-header.jpg), no-repeat;
     background-size:cover;
     @media screen and (min-width:600px) {
->>>>>>> feature
         background: url(../images/desktop/image-header.jpg), no-repeat;
         background-size:cover;
     };
@@ -26,10 +15,7 @@ header {
         color:$White;
         display:flex;
         flex-direction:column;
-<<<<<<< HEAD
         margin-top: 2rem;
-=======
->>>>>>> feature
         align-items: center;
         font-family: $font2;
         font-size:25px;
@@ -38,7 +24,6 @@ header {
             font-size:3em;
         }
     }
-}
 }
 
 .logo {
