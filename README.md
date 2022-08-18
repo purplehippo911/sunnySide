@@ -28,9 +28,13 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
+Desktop:
 
-![](./screenshot.jpg)
+![Desktop](design/desktopScreenshot.png)
 
+Mobile:
+
+![Mobile](design/mobileScreenshot.png)
 
 
 ### Links
@@ -51,29 +55,117 @@ Users should be able to:
 - Gulp
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I got the chance to practice my CSS Grid skills and working with Sass and Gulp. I didn't necessarily learn something new, I rather practiced on the skills I knew I could need some tinkering with. I also got to practice my responsive skills and writing clean and semantic HTML.
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<a href="#" class="logo">
+          <img src="dist/images/logo.svg" alt="this is the logo" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <strong>About</strong>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <strong>Services</strong>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <strong>Projects</strong>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link --nav__button">
+                <strong>Contact</strong>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="hamburger" href="#">
+          <img src="dist/images/icon-hamburger.svg" alt="hamburger" />
+        </a>
+      </div>
+      <div class="dropdown">
+        <nav class="dropdown__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <strong>About</strong>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <strong>Services</strong>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <strong>Projects</strong>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link --nav__button">
+                <strong>Contact</strong>
+              </a>
+            </li>
+          </ul>
+        </nav>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.dropdown {
+    width:80%;
+    padding:.5rem;
+    margin:0 auto;
+    margin-top:3rem;
+    background:$White;
+    position:absolute;
+    display:none;
+    transition: .9s ease-in-out;
+    nav{
+        display:flex;
+        justify-content:center;
+        
+    }
+    .nav__list {
+        padding:2rem;
+        flex-direction:column;
+        align-items: center;
+        gap:2rem;
+    }
+
+    .nav__link {
+        color:$Darkgrayishblue;
+    }
+
+    .--nav__button {
+        background:$Yellow;
+        color:$VerydarkBlue;
+        &:hover{
+            background:inherit;
+        }
+    }
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+const hamburger = document.querySelector(".hamburger");
+      const dropdown = document.querySelector(".dropdown");
+
+      hamburger.addEventListener("click", (e) => {
+        dropdown.classList.toggle("open");
+      });
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Now as I feel quite comfortable with CSS, HTML and other skills like Sass and Gulp, then I'm gonna try to learn a JS framework. I'm thinking of starting with Vue.js and then learning other frameworks like React, if need be. When I feel comfortable enough with that, then I'm thinking of practicing my JS framework in a frontendmentor challenge.
 
 
 ### Useful resources
@@ -85,8 +177,10 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - Website - [My website](https://purplehippo911.github.io/website/)
 - Frontend Mentor - [@Purplehippo911](https://www.frontendmentor.io/profile/purplehippo911)
+- Discord - mashedapples222#7574
 
 ## Acknowledgments
-[M](https://github.com/Davidlloyd8/Capstone-3-Project---SunnySide-Agency-Landing-Page)
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I was quite inspired by this soulution, and would recommend you to check it out. This soulution is made by [Davidlloyd8][1] and his teammates. Check out their project here:
+[Davidlloyd8's solution](https://github.com/Davidlloyd8/Capstone-3-Project---SunnySide-Agency-Landing-Page)
 
+[1]: https://github.com/Davidlloyd8/
